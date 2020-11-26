@@ -16,7 +16,7 @@
   $datePlein = $dateObjet->format("d-m-Y H:i");
 
   // dépose un nouveau cookie
-  $cookieIndex = $dateObjet->format("YmdHi");
+  $cookieIndex = $dateObjet->format("YmdHisu");
   $cookieContent = "$datePlein|$prixLitre|$moyenneLitresAuCent";
   setcookie("plein[$cookieIndex]", $cookieContent, strtotime( "+6 months" ));
 
