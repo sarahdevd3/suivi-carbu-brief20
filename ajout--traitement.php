@@ -10,7 +10,7 @@
 
   // calcul à effectuer
   $moyenneLitresAuCent = ($volumePlein*100) /$kmParcourus;
-  $moyenneLitresAuCent = number_format($kmParcourus,2);
+  $moyenneLitresAuCent = number_format($moyenneLitresAuCent,2);
   // date à cet instant T
   $dateObjet = new DateTime(null, new DateTimeZone("Europe/Paris"));
   $datePlein = $dateObjet->format("d-m-Y H:i");
